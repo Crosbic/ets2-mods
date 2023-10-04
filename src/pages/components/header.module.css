@@ -7,3 +7,8 @@
     background: #1d1b1c;
     padding: 0 1rem 0 1rem;
 }
+
+.textLogo:hover {
+    color: #137a7f;
+    transition: ease-in-out 0.2s;
+}

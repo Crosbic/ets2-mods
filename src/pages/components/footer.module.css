@@ -4,14 +4,14 @@
     align-items: center;
     height: 3rem;
     background: #1d1b1c;
-    font-size: 0.8rem;
+}
+
+.footer {
+    display: inline-flex;
     gap: 1rem;
 }
 
-p.footer {
-    display: inline;
-}
-
-p.footer + p.footer:before {
-    content: "|";
+.textLink:hover {
+    color: #137a7f;
+    transition: ease-in-out 0.2s;
 }
