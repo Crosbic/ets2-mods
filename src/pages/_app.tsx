@@ -7,6 +7,7 @@ import Head from 'next/head'
 import { theme } from '@/common/theme'
 import Footer from '@/pages/components/footer'
 import Header from '@/pages/components/header'
+import styles from '@/styles/Home.module.css'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -21,7 +22,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Header />
-        <Component {...pageProps} />
+        <main className={styles.main}>
+          <Component {...pageProps} />
+        </main>
         <Footer />
       </ThemeProvider>
     </>
